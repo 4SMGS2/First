@@ -1,0 +1,96 @@
+.find {
+    display: flex;
+
+    .findLine {
+        margin-left: 5%;
+        margin-top: 64px;
+        width: 90%;
+        height: 48px;
+        border-radius: 30px;
+        border: 1px solid #e7ecfc;
+        background-image: url("./image/findIcon.svg");
+        background-repeat: no-repeat;
+        background-position: 99%;
+    }
+}
+
+body {
+    background-color: #f3f3f3;
+
+    .dialog {
+        position: relative;
+        margin: auto;
+        width: 400px;
+        height: 400px;
+        border-radius: 15px;
+        border: none;
+
+        .info {
+            .firstLine {
+                display: flex;
+                justify-content: space-between;
+
+                .name {
+                    font-size: 24px;
+                    font-weight: bold;
+                    margin-left: 5%;
+                }
+
+                .close {
+                    margin-top: 25px;
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+
+            .mainInfo {
+                display: grid;
+                gap: 0px;
+                grid-template-columns: repeat(2, 50%);
+                margin-left: 5%;
+            }
+        }
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 30%);
+        gap: 10px;
+        justify-content: center;
+        margin-left: 25px;
+        margin-top: 25px;
+
+        .test {
+            background-color: white;
+            border-radius: 25px;
+            width: 357px;
+            height: 314px;
+
+            .name {
+                font-size: 24px;
+                font-weight: bold;
+                margin-left: 5%;
+            }
+
+            .info {
+                margin-left: 5%;
+
+                .number {
+                    display: flex;
+
+                    .numberText {
+                        margin-left: 2%;
+                    }
+                }
+
+                .email {
+                    display: flex;
+
+                    .emailText {
+                        margin-left: 2%;
+                    }
+                }
+            }
+        }
+    }
+}
